@@ -16,10 +16,8 @@ class _FavorilerSayfasiState extends State<FavorilerSayfasi> {
     return ListView.builder(
       itemCount: favoriUrunler.length,
       itemBuilder: (context, index) {
-        // Favori ürünleri göster
         return ListTile(
           title: Text(favoriUrunler[index].yemek_adi),
-          // Diğer özellikleri ekleyebilirsin
         );
       },
     );

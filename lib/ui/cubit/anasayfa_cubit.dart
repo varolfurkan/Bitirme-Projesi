@@ -11,8 +11,6 @@ class AnasayfaCubit extends Cubit<List<Yemekler>>{
 
   void favoriyeEkle(Yemekler yemek) {
     if (currentUserUID != null) {
-      // Favori eklemek için kullanıcının belgesini güncelle
-      // Bu örnek Firestore kullanıyor, sizin kullanmanız gereken veritabanına bağlıdır
       FirebaseFirestore.instance.collection('users').doc(currentUserUID).update({
         'favoriUrunler': FieldValue.arrayUnion([yemek.yemek_adi]),
       });
@@ -21,7 +19,6 @@ class AnasayfaCubit extends Cubit<List<Yemekler>>{
   }
   void favoridenCikar(Yemekler yemek) {
     if (currentUserUID != null) {
-      // Favori çıkarmak için kullanıcının belgesini güncelle
       FirebaseFirestore.instance.collection('users').doc(currentUserUID).update({
         'favoriUrunler': FieldValue.arrayRemove([yemek.yemek_adi]),
       });
