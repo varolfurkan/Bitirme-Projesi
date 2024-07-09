@@ -1,7 +1,22 @@
 # Bitirme-Projesi
 TechCareer Flutter Eğitimi Bitirme Projesi
 
-### Screenshots
+### Kullanılan Teknolojiler
+
+Bu projede aşağıdaki teknolojiler ve kütüphaneler kullanılmıştır:
+
+- flutter_bloc
+- dio
+- lottie
+- firebase_core
+- firebase_auth
+- fluttertoast
+- cloud_firestore
+
+### API Kullanımı
+Bu projede, veri alma ve gönderme işlemleri için `dio` kütüphanesi kullanılarak çeşitli API'ler ile entegrasyon sağlanmıştır.
+
+### Ekran Görüntüleri
 
 <img src="https://github.com/varolfurkan/Bitirme-Projesi/assets/99636501/abb9d095-9b36-4aac-a51b-6a560fb5296a" alt="Screenshot_1720538248" width="300"/>
 <img src="https://github.com/varolfurkan/Bitirme-Projesi/assets/99636501/9e17fcdc-7c05-4a9f-8886-e7cc72cbbe1e" alt="Screenshot_1720538339" width="300"/>
